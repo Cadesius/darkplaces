@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="shortcut icon" href="media/web-icon.png">
+    <title>music from dark places</title>
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-content">
+        
+        <h3><a href="https://darkplaces.bandcamp.com">bandcamp store</a></h3>
+        
+        <h1><a href="home.html">music from<br>dark places.</a></h1>
+
+        <p>dark, exploratory music, set against a hopeful ambience. inspired in equal parts by the beauty and terror of the world around us.</p>
+
+        <p>based in exeter, dark places was created as a hub for experimental and atmospheric music, with a focus on free distribution.</p>
+
+        <h2>buying music from us.</h1>
+
+        <p class="align-left">all releases can be acquired for free from our <a href="https://darkplaces.bandcamp.com">bandcamp page</a>. you can also find compact discs, cassettes and other limited merchandise there.</p>
+
+        <p class="align-left">additionally, backup downloads of all releases are available in the archive below. if you use these downloads and want to donate to dark places, please feel free to purchase any work on bandcamp when you are able to.</p>
+
+    </div>
+
+</header>
+
+<div class="content">
+
+    <h2 class="align-right">getting involved.</h2>
+
+    <p class="align-right">if you're interested in working with dark places, contact us by email or phone. we'd welcome any collaborations, contributions or creative input you might be interested in providing.</p>
+
+    <p>contact details can be found at the bottom of this page.</p>
+
+</div>
+
+<div class="archive">
+
+    <div class="content">
+        <h2 style="padding-top: 2em; font-size: 20pt;">the archive.</h2>
+        <p class="align-left" style="width: 100%;padding-bottom: 2em;"> click on the year you want to access. all releases from that year will be displayed in chronological order.</p>
+    </div>
+
+    <button class="collapsible"><p class="collapsible-p">2023</p></button>
+    <div class="archive-listing" style="background-image: url('media/background/clouds-2.jpg');">
+        <div class="content" style="margin-bottom: 2em;">
+            <div class="release">
+                <img class="release-thumbnail" src="media/releases/2023-10-30-rebirth/cover.jpg">
+                <div class="release-content">
+                    <h4><a href="https://darkplaces.bandcamp.com/album/rebirth">REBIRTH</a></h4>
+                    <p class="release-p">cade white &nbsp&nbsp/&nbsp&nbsp 30·10·2023</p>
+                    <div class="downloads">
+                        <p class="release-p"><a href="media/releases/2023-10-30-rebirth/rebirth-cade-white-flac.zip" download>download flac</a></p>
+                        <p class="release-p"><a href="media/releases/2023-10-30-rebirth/rebirth-cade-white-mp3.zip" download>download mp3</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="collapsible"><p class="collapsible-p">2024</p></button>
+    <div class="archive-listing" style="background-image: url('media/background/bridge-1.jpg');">
+        <div class="content" style="margin-bottom: 2em;">
+            <div class="release">
+                <img class="release-thumbnail" src="media/releases/2024-02-01-shadows-reflections/cover.jpg">
+                <div class="release-content">
+                    <h4>Shadows & Reflections</h4>
+                    <p class="release-p">cade white &nbsp&nbsp/&nbsp&nbsp scheduled for early 2024.</p>
+                    <div class="downloads">
+                        <p class="release-p"><a style="color: #757575;">download flac</a></p>
+                        <p class="release-p"><a style="color: #757575;">download mp3</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+
+    </script>
+
+</div>
+
+<div class="background-container" style="background-image: url(media/background/cave-1.jpg);">
+
+<div class="content" style="padding: 2em 0;">
+
+    <h2 class="align-right" style="padding-top: 2em;">get in touch with dark places.</h2>
+
+    <p>use any of the links below to contact us. you can use the mobile phone number to send us a text, or you can email us if you'd prefer. bandcamp also provides an email contact functionality.</p>
+
+    <p style="padding-bottom: 1em;">we'd be happy to hear from you with questions, feedback or anything else you think we'd find interesting.</p>
+
+</div>
+
+</div>
+
+<footer>
+    
+    <div class="content">
+
+    <p class="align-left" style="width: 100%;">all music licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">creative commons attribution-sharealike unported (cc by-sa 3.0).</a></p>
+
+    <div class="footer-links">
+        <p style="margin-left: 0; padding-left: 0; padding-top: 0; width: 100%; text-align: left;"><a href="mailto:contact@darkplaces.uk">contact@darkplaces.uk</a></p>
+        <p style="margin-left: 0; padding-left: 0; padding-top: 0; width: 100%; text-align: left;"><a href="https://darkplaces.bandcamp.com">darkplaces.bandcamp.com</a></p>
+        <p style="margin-left: 0; padding-left: 0; padding-top: 0; width: 100%; text-align: left;"><a href="tel:+447787235005">07787 235 005</a></p>
+        <p style="margin-left: 0; padding-left: 0; padding-top: 0; width: 100%;"><a id="scroll-to-top" href="javascript:;" onclick="goToTop()">return to top.</a></p>
+    </div>
+
+    </div>
+
+</footer>
+
+<script>
+
+    button_scrollToTop = document.getElementById("scroll-to-top");
+
+        function goToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    
+</script>
+
+</body>
+
+</html>
